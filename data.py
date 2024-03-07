@@ -11,7 +11,7 @@ def create_combined_list(directory):
                 combined_list[-1][2].append(line.strip())
                 combined_list[-1][1] += 1
 
-    return sorted(combined_list, key=lambda x: x[2], reverse=True)
+    return sorted(combined_list, key=lambda x: x[1])
 
 
 def create_file_from_directory(directory, filename):
